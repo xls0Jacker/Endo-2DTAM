@@ -17,7 +17,7 @@
 </p> -->
 
 <p align="center">
-      <img src="figs/fig1_page-0001.jpg" align=“center” width="300" height="280"/><img src="figs/output_recon.gif" align=“center” width="300" height="280"/>
+      <img src="figs/fig1_page-0001.jpg" align=“center” width="300" height="250"/><img src="figs/output_recon.gif" align=“center” width="300" height="250"/>
   </a>
 </p>
 
