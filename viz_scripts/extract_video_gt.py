@@ -255,6 +255,7 @@ if __name__ == '__main__':
     param = o3d.io.read_pinhole_camera_parameters(f'/home/lastbasket/code/slam/EndoScopic/gslam2d/{json_name}.json')
     
     # for c in range(len(cam_param['ex'])):
+    count = 0
     for i, cam_o3d in tqdm(enumerate(to_cam_open3d(extrinsics, intrinsic, desired_height, desired_width)), desc="TSDF integration progress"):
         rgb = rgbmaps[i]
         depth = depthmaps[i]
@@ -269,7 +270,7 @@ if __name__ == '__main__':
             depth_trunc = depth_trunc, convert_rgb_to_intensity=False,
             depth_scale = depth_scale
         )
-        vizualizer.clear_geometries()
+        vizualizer.clear_geometries([count])
         o3d_intrinsics.append(cam_o3d.intrinsic.intrinsic_matrix)
         o3d_extrinsics.append(cam_o3d.extrinsic)
         volume.integrate(rgbd, intrinsic=cam_o3d.intrinsic, extrinsic=cam_o3d.extrinsic)

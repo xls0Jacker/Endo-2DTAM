@@ -1,6 +1,6 @@
 export OUTPUT_NAME=C3VD_base
 export DOWN_SCALE=2
-for i in {2..2}
+for i in {0..9}
 do
     echo $i
     export SCENE_NUM=$i

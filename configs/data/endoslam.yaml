@@ -1,0 +1,10 @@
+dataset_name: 'endoslam'
+camera_params:
+  image_height: 320 
+  image_width: 320
+  fx: 156.0418
+  fy: 155.7529
+  cx: 178.5604
+  cy: 181.8043
+  png_depth_scale: 2.55
+  crop_edge: 0

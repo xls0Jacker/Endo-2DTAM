@@ -15,4 +15,3 @@ cyclonedds
 pytorch-msssim
 jupyter
 trimesh
-git+https://github.com/JonathonLuiten/diff-gaussian-rasterization-w-depth/
